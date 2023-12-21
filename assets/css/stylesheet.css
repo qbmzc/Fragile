@@ -1,7 +1,7 @@
 @font-face { font-family: "Digital"; src: url('../fonts/Adequate-ExtraLight.ttf'); }
 @font-face { font-family: "Micro"; src: url('../fonts/MicroExtendFLF.ttf'); }
 body {
-	background-image: url(../img/bg.jpg);
+	background-image: url(../img/bg.png);
 	background-size: cover;
 	background-position: top center;
 	background-color:#FFF;
