@@ -70,18 +70,31 @@
 	/*进行视频裁剪*/
 	overflow: hidden;
 }
+.video-background {
+    position: fixed; /* 固定在屏幕上 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    min-width: 100%; /* 最小宽度 */
+    min-height: 100%; /* 最小高度 */
+    width: auto; /* 自动调整宽度 */
+    height: auto; /* 自动调整高度 */
+    z-index: -1; /* 放在背景 */
+    transform: translate(-50%, -50%); /* 居中对齐 */
+    background-size: cover; /* 覆盖整个屏幕 */
+    overflow: hidden; /* 隐藏溢出的部分 */
+}
 
 .video-box .video-background {
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 0;
+	top: 0;
 	/*保证视频内容始终居中*/
-	transform: translate(-50%, -50%);
+	transform: translate(-100%, -100%);
 	width: 100%;
 	height: 100%;
 	/*保证视频充满屏幕*/
-	object-fit: cover;
-	min-height: 800px;
+	object-fit: fill;
+	/* min-height: 800px; */
 }
 
 /* video {
